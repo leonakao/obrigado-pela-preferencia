@@ -21,7 +21,7 @@ import ImageCircle from '../components/ImageCircle';
 export default {
     data: function() {
         return {
-            aux: [1,2,3,4,5,6, 7, 8]
+            aux: [1,2,3,4,5]
         }
     },
     components: {
@@ -32,8 +32,9 @@ export default {
 
 <style>
 .header {
-    margin-top: 20%;
+    margin-top: 50px;
     text-align: center;
+    color: #fff;
 }
 
 .body .column,.columns {
@@ -43,7 +44,14 @@ export default {
 }
 
 .body {
-    margin-top: 20%;
+    margin-top: 10%;
     text-align: center;
+
+}
+
+html {
+    height: 100vh;
+    background-color: #bd4f6c;
+    background-image: linear-gradient(326deg, #bd4f6c 0%, #d7816a 74%);
 }
 </style>
