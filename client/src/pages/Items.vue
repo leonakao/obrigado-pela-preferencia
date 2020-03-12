@@ -6,7 +6,7 @@
             </div>
         </div>
         <div class="body">
-            <div class="row">
+            <div class="row box">
                 <div v-for="a in aux" :key="a" class="four columns">
                     <image-circle></image-circle>
                 </div>
@@ -35,6 +35,11 @@ export default {
     margin-top: 50px;
     text-align: center;
     color: #fff;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
 }
 
 .body .column,.columns {
