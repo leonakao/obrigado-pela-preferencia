@@ -16,6 +16,6 @@ export default {
     height: 200px;
     background-color: #ccc;
     border-radius: 100%;
-    margin: 0 auto;
+    margin-top: 30px;
 }
 </style>

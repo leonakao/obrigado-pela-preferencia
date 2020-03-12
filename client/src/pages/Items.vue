@@ -7,7 +7,7 @@
         </div>
         <div class="body">
             <div class="row box">
-                <div v-for="a in aux" :key="a" class="four columns">
+                <div v-for="a in aux" :key="a" class="box-image">
                     <image-circle></image-circle>
                 </div>
             </div>
@@ -39,6 +39,8 @@ export default {
 
 .box {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
   justify-content: center;
 }
 
@@ -54,9 +56,15 @@ export default {
 
 }
 
-html {
+html, body{
     height: 100vh;
     background-color: #bd4f6c;
     background-image: linear-gradient(326deg, #bd4f6c 0%, #d7816a 74%);
+}
+
+.box-image {
+  flex: 0 0 33.333333%;
+  display: flex;
+  justify-content: center;
 }
 </style>
