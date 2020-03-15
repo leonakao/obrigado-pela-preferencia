@@ -20,11 +20,11 @@ export default {
     data: function() {
         return {
             profiles: [
-                {id: 1, name: 'Leonardo Nakao', page:'naka' },
-                {id: 2, name: 'Leonardo Theodoro', page:'tormento' },
-                {id: 3, name: 'Ricardo Sparapan', page:'junin' },
-                {id: 4, name: 'Rafael Fernandes', page:'rafa' },
-                {id: 5, name: 'Enrico Ramos', page:'talarico' },
+                {id: 1, image:'https://unsplash.it/200/200', name: 'Leonardo Nakao', page:'naka' },
+                {id: 2, image:'https://unsplash.it/200/200', name: 'Leonardo Theodoro', page:'tormento' },
+                {id: 3, image:'https://unsplash.it/200/200', name: 'Ricardo Sparapan', page:'junin' },
+                {id: 4, image:'https://unsplash.it/200/200', name: 'Rafael Fernandes', page:'rafa' },
+                {id: 5, image:'https://unsplash.it/200/200', name: 'Enrico Ramos', page:'talarico' },
             ]
         }
     },

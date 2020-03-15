@@ -1,7 +1,7 @@
 <template>
     <div class="box">
         <router-link :to="`/profile/${item.page}`">
-            <ImageCircle></ImageCircle>
+            <ImageCircle :img="item.image"></ImageCircle>
             <span class="item-title">{{ item.name }}</span>
         </router-link>
     </div>
