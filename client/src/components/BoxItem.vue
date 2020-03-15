@@ -25,10 +25,10 @@ export default {
 
 <style>
 .box {
-  flex: 0 0 30%;
+  flex: 0 0 25.33333%;
   display: flex;
   justify-content: center;
-  margin: 0 20px;
+  margin: 0 4%;
 }
 
 .item-title {
