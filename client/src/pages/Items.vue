@@ -7,25 +7,29 @@
         </div>
         <div class="body">
             <div class="row box">
-                <div v-for="a in aux" :key="a" class="box-image">
-                    <image-circle></image-circle>
-                </div>
+                <BoxItem v-for="profile in profiles" :key="profile.id" :item="profile"></BoxItem>
             </div>
         </div>
     </div>
 </template>
 
 <script>
-import ImageCircle from '../components/ImageCircle';
+import BoxItem from '../components/BoxItem.vue';
 
 export default {
     data: function() {
         return {
-            aux: [1,2,3,4,5]
+            profiles: [
+                {id: 1, name: 'Leonardo Nakao', page:'naka' },
+                {id: 2, name: 'Leonardo Theodoro', page:'tormento' },
+                {id: 3, name: 'Ricardo Sparapan', page:'junin' },
+                {id: 4, name: 'Rafael Fernandes', page:'rafa' },
+                {id: 5, name: 'Enrico Ramos', page:'talarico' },
+            ]
         }
     },
     components: {
-        ImageCircle,
+        BoxItem,
     }
 }
 </script>
@@ -60,11 +64,5 @@ html, body{
     height: 100vh;
     background-color: #bd4f6c;
     background-image: linear-gradient(326deg, #bd4f6c 0%, #d7816a 74%);
-}
-
-.box-image {
-  flex: 0 0 33.333333%;
-  display: flex;
-  justify-content: center;
 }
 </style>
